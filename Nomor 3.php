@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="robots" content="nofollow">
+		<meta name="googlebot" content="noindex">
+	    <meta name="theme-color" content="#5D4037">
+	</head>
+<body>
+    <section class="login-form-wrap">
+        <h1>Handshake</h1>
+        <br>
+        <form class="login-form" action="#">
+            <label>
+            <input type="number" name="angka" id="angka" required placeholder="Masukkan jumlah orang">
+           <input type="button" onclick="count_handshake()" value="Cetak">
+           </label>
+            <div class="keterangan">Result Handshake : 
+             </div>
+             <input type="number" name="angka" id="result" required placeholder="0" readonly>
+        </form>
+    </section>
+</body>
+<script type="text/javascript">
+function count_handshake() {
+    var v1 = document.getElementById('angka').value;
+    var i=0;
+    var t=0;
+    for(i;i<v1;i++){
+        t +=i;
+    }
+   console.log(t);
+    var print = document.getElementById('result');
+    print.value = t;
+}
+</script>
+</html
